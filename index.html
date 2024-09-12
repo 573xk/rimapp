@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="./">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Rim导航">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Rim导航</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    html {
+      font-size: 16px;
+    }
+  </style>
+
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?6b116064c6b144f53c779005eee79b49";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+  
+
+
+  <script>
+    function detectBrowser() {
+      var userAgent = navigator.userAgent.toLowerCase();
+      var browser, version;
+
+      // 检测IE浏览器
+      if (userAgent.indexOf('msie') !== -1 || userAgent.indexOf('trident') !== -1) {
+        if (userAgent.indexOf('msie') !== -1) {
+          version = parseInt(userAgent.match(/msie (\d+)/)[1], 10);
+        } else {
+          version = parseInt(userAgent.match(/rv:(\d+\.\d+)/)[1], 10);
+        }
+        browser = 'IE' + version;
+      } else {
+        // 检测非IE浏览器
+        if (userAgent.indexOf('edge') > -1) {
+          version = parseInt(userAgent.match(/edge\/(\d+)/)[1], 10);
+          browser = 'Edge ' + version;
+        } else if (userAgent.indexOf('chrome') > -1) {
+          version = parseInt(userAgent.match(/chrome\/(\d+)/)[1], 10);
+          browser = 'Chrome ' + version;
+        } else if (userAgent.indexOf('safari') > -1) {
+          version = parseInt(userAgent.match(/version\/(\d+)/)[1], 10);
+          browser = 'Safari ' + version;
+        } else if (userAgent.indexOf('firefox') > -1) {
+          version = parseInt(userAgent.match(/firefox\/(\d+)/)[1], 10);
+          browser = 'Firefox ' + version;
+        } else {
+          browser = '未知浏览器';
+        }
+      }
+
+      // 显示浏览器内核版本信息
+      document.getElementById('browserInfo').innerText = browser;
+    }
+
+    // 确保页面加载完成后再执行检测
+    window.onload = detectBrowser;
+  </script>
+
+
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="js/browser-image-compression.js" type="application/javascript"></script>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+    .tip {
+      margin-top: 10px;
+    }
+
+    /* 定义动画关键帧 */
+    @keyframes loading-animation {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* 设置loading元素样式 */
+    .loading-container {
+      width: 3rem;
+      height: 3rem;
+      border: 0.25rem solid rgba(0, 120, 212, 0.1);
+      border-left-color: rgb(0, 120, 212);
+      border-radius: 50%;
+      animation: loading-animation 0.8s infinite linear;
+      display: inline-block;
+    }
+  </style>
+
+</head>
+
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+
+  <div class="container">
+    <div id="loading-animation" class="loading-container"></div>
+    <div id="browserInfo" class="tip"></div>
+    <div id="loading-text" class="tip">加载中...</div>
+  </div>
+
+  <script>
+    function hideElement() {
+      document.getElementById('loading-animation').style.display = 'none';
+      document.getElementById('loading-text').style.display = 'none';
+      document.getElementById('browserInfo').style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>

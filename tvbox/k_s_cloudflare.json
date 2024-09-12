@@ -1,0 +1,53 @@
+{
+    "date": "2024-09-01",
+    "urls": [
+        {
+            "url": "http://www.饭太硬.com/tv/",
+            "name": "饭太硬"
+        },
+        {
+            "url": "http://肥猫.com",
+            "name": "肥猫"
+        },
+        {
+            "url": "https://xn--8owq8u.com/tv/",
+            "name": "毒盒"
+        },
+        {
+            "url": "http://www.meowtv.vip/tvbox.json",
+            "name": "喵影视"
+        },
+        {
+            "url": "http://cdn.qiaoji8.com/tvbox.json",
+            "name": "巧技"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/天天开心/api.json",
+            "name": "天天开心"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/ok/api.json",
+            "name": "ok"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/南风/api.json",
+            "name": "南风"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/小米/api.json",
+            "name": "小米"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/道长/api.json",
+            "name": "道长"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/飞龙影视/api.json",
+            "name": "飞龙影视"
+        },
+        {
+            "url": "https://rimapp.pages.dev/tvbox/摸鱼线路/api.json",
+            "name": "摸鱼线路"
+        }
+    ]
+}
